@@ -41,10 +41,12 @@
             <div id="contact">
                 <h2>Convert Music to Sheet Music</h2>
                 <div id="contact-form">
-                    <form method="POST" action="#">
-                        <input type="text" class="form-control" id="youtubeUrl" placeholder="https://www.youtube.com/watch?v=4Tr0otuiQuU" aria-describedby="urlHelp">
+                    <form id="url-form">
+                        <input name="url" type="text" class="form-control" placeholder="enter youtube url">
                         <button type="submit">Send</button>
                     </form>
+                    <br/>
+                    <div id="results"></div>
                 </div>
             </div>
         </div>
@@ -96,6 +98,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src="js/mobius.js"></script>
 </body>
 
 </html>
